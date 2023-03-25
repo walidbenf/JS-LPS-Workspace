@@ -1,0 +1,1 @@
+var nb= Number(prompt())
