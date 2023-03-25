@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body onKeyPress="if (event.keyCode == 13) envoie()">
+  <div class="container">
+    <form>
+      <div class="form-group row">
+        <label for="example-text-input" class="col-1 col-form-label">Nom</label>
+        <div class="col-2">
+          <input class="form-control" type="text" id="example-text-input">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-date-input" class="col-1 col-form-label">Date</label>
+        <div class="col-2">
+          <input class="form-control" type="date" id="example-date-input">
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" onclick="envoie()">Envoyer</button>
+    </form>
+  </div>
+  <!--
+  <form method="post" enctype="multipart/form-data">
+    <fieldset class="name">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" required>
+    </fieldset>
+    <fieldset class="date">
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required>
+    </fieldset>
+    <input type="button" value="Envoyer" onclick="envoie()" />
+  </form>
+-->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice prés. p.60</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script>
+      function frm1() {
+        var x = document.getElementById("frm1");
+        for (var i = 0; i <myUsers.length ;i++) {
+          userName= x.elements[0].value ;
+          userBirthday = x.elements[2].value
+          myUsers.push({name:userName,birthday:userBirthday});
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <p id="aff_date"></p>
+    <p>Veuillez entrer vos nom, prénom et date de naissance :</p>
+    <form id="frm1" action="/">
+      Prénom: <input id='prenom' type="text" name="fname"><br>
+      Nom: <input id='nom' type="text" name="lname"><br>
+      Date de naissance AAAA-MM-JJ: <input id='date' type="text" name="birthday"><br><br>
+      <input type="button" onclick="frm1()" value="Envoyer">
+    </form>
+    <p id="list_users"></p>
+
+    <script src="js/myscript.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="form-group mb-2">
+                <form>
+                    <div class="form-group">
+                        <label for="prenom">Prenom</label>
+                        <input type="text" class="form-control" id="prenom" placeholder="Mon prenom">
+                    </div>
+                    <label for="date">date de naissance</label>
+                    <input type="date" class="form-control" id="date" placeholder="Enter date"><br>
+                    <label for="date">image de profil</label>
+                    <input type="text" class="form-control" id="image" placeholder="Lien..."><br>
+
+                    <button type="button" name='button' onclick="envoi()" class="btn btn-primary">Envoi</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div id="list_users" class="row">
+
+        </div>
+    </div>
+
+
+
+    <!-- <form method="post">
+        <div>
+            <label for="prenom">Prenom :</label>
+            <input type="text" id="prenom" name="prenom" required><br>
+        </div>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date"><br>
+        </div>
+        <div>
+            <button type='button' name='button' onclick="envoi()">hello</button>
+        </div>
+    </form> -->
+    <script src="js/myscript.js"></script>
+</body>
+
+</html>
