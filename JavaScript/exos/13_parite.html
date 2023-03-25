@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parité</title>
+	<meta charset="UTF-8">
+
+</head>
+
+<body>
+	<h1>Parité</h1>
+	<h3>Examinez le programme parite.js ci-dessous qui affiche les nombres pairs (divisibles par 2) jusqu'à 10.</h3>
+	<p>
+		<ul>
+			<li>for (var i = 1; i <= 10; i++) {</li>
+			<li>if (i % 2 === 0) {</li>
+			<li>console.log(i + " est pair");</li>
+			<li>}</li>
+			<li>}</li>
+		</ul>
+	</p>
+	<p>Il utilise l'opérateur modulo %, qui calcule le reste de la division entière d'un nombre par un autre. Si le résultat du modulo d'un nombre par 2 est 0, alors ce nombre est pair. Voici quelques exemples d'utilisation de cet opérateur.</p>
+		<ul>
+			<li>console.log(10 % 2); // Affiche 0 car 10 = 5 * 2 + 0</li>
+			<li>console.log(11 % 2); // Affiche 1 car 11 = 5 * 2 + 1</li>
+			<li></li>
+			<li>console.log(18 % 3); // Affiche 0 car 18 = 3 * 6 + 0</li>
+			<li>console.log(19 % 3); // Affiche 1 car 19 = 3 * 6 + 1</li>
+			<li>console.log(20 % 3); // Affiche 2 car 20 = 3 * 6 + 2</li>
+		</ul>
+
+	<p>Modifiez le programme parite.js pour qu'il affiche aussi les nombres impairs.</p>
+		<ul>
+			<li>1 est impair</li>
+			<li>2 est pair</li>
+			<li>3 est impair</li>
+			<li>4 est pair</li>
+			<li>5 est impair</li>
+			<li>6 est pair</li>
+			<li>...</li>
+		</ul>
+
+	</p>
+	<p>Ensuite, améliorez le programme pour que le nombre initial soit saisi par l'utilisateur.</p>
+	<p style='border: 1px solid; background-color: lightgray'>Le programme ne doit afficher que 10 nombres (y compris celui saisi) et non 11.</p>
+	<script src="js/parite.js"></script>
+</body>
+</html>

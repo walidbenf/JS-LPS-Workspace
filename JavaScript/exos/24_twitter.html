@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Twitter Like</title>
+    <style media="screen">
+    body {
+        text-align: center;
+        /*background: #EBF4FB;*/
+        background: #F1F1F1;
+        font-family: arial
+    }
+    .red {
+        color : #ff0000 !important;
+    }
+    textarea {
+        /*border: 2px solid #D9E3F9;*/
+        border: 2px solid #40A798;
+        border-radius: 4px;
+        padding: 8px 14px;
+    }
+    h1 {
+        /*color: #1da1f2;*/
+        color: #40A798;
+        font-size: 33px;
+        font-weight: 300;
+        line-height: 33px;
+        margin-bottom: 11px;
+    }
+    p#counterBlock {
+        color: #456;
+        font-size: 37px;
+        font-weight: bold;
+        margin-top:7px
+    }
+
+    </style>
+</head>
+<body>
+    <h1> Compteur de caractères<br>en 10 lignes de JS<br><small>(Twitter like)</small></h1>
+    <hr>
+    <div style="text-align: left; width: 75%; margin: 0 auto">
+        <p>L'utilisateur peut saisir un texte de 140 caractères dans un textarea #tweet-content</p>
+        <p>Un paragraphe #counter-block affiche les caractères restants</p>
+    </div>
+    <h3>Comment procéder ?</h3>
+    <div style="text-align: left; width: 75%; margin: 0 auto">
+        <ol>
+            <li>Detecter l'evenement à chaque fois que l'utilisateur presse une touche</li>
+            <li>Dans la fonction lancée lorsque l'event est détecter calculer le nb de caractères restants et l'afficher dans le p#counter-block</li>
+        </ol>
+    </div>
+
+    <h3>INDICATIONS</h3>
+    <div style="text-align: left; width: 75%; margin: 0 auto">
+        <ul>
+            <li>Utiliser l'event keyup</li>
+            <li>Utiliser la propriété elt.value pour récupérer la valeur d'un input ou d'un textarea</li>
+            <li>Utiliser .length pour compter le nombre de caractères d'une chaîne de caractères</li>
+            <li>Utiliser elt.textContent='' pour remplacer le contenu d'un élement HTML</li>
+        </ul>
+    </div>
+
+    <p>Cet exercice simple fait intervenir 3 notions en Javascript :</p>
+    <div style="text-align: left; width: 75%; margin: 0 auto">
+        <ul>
+            <li>La sélection d'élément <small>(avec querySelector et getElementbyId)</small></li>
+            <li>le gestionnaire d'évènements <small>(avec addEventListener)</small></li>
+            <li>La manipulation du DOM <small>(avec innerHTML et classList)</small></li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <textarea id="tweetContent" placeholder="Votre Tweet Ici..." style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 86px; width:60%"></textarea>
+
+    <p id="counterBlock"></p>
+    <script src="js/twitter.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Styles</title>
+    <style type="text/css">
+        .active{
+            color: #fff;
+            background: #000;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1{Modifier dynamiquement le style}+h2{Objectif:}+p{Manipuler les styles des éléments html en javascript.}+h2{Énoncé :}+p{Soit le document html suivant :}+ol>li{Ecrire la fonction changer_style qui permet de styler le paragraphe au clic du bouton par :}>(li{une couleur blanche}+li{un background fuschia}+li{une bordure royalblue pointillée de 1px}+li{un retrait de 5px}) -->
+    <h1>Modifier dynamiquement le style</h1>
+    <h2>Objectif:</h2>
+    <p>Manipuler les styles des éléments html en javascript.</p>
+    <h2>Énoncé :</h2>
+    <p>Soit le document html suivant :</p>
+    <ol>
+        <li>Ecrire la fonction changer_style qui permet de styler le paragraphe au clic du bouton par :
+            <li>une police de couleur blanche</li>
+            <li>un background *rosyBrown*</li>
+            <li>une bordure *teal* pointillée de 6px</li>
+            <li>un retrait de 30px (INDICE =>>> retrait = marge intérieure)</li>
+            <li>une largeur d'écran de 60%... centrée biensûr ;-)</li>
+        </li>
+    </ol>
+
+    <hr>
+
+    <p id="parag1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+    </p>
+    <button onclick='change_style()'>Changer Style</button>
+    <script src="js/style.js"></script>
+</body>

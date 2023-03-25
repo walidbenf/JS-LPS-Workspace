@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu Accordéon JS</title>
+    <script src="https://use.fontawesome.com/323266590d.js"></script>
+    <style media="screen">
+    body{
+        font-size: 1.7rem;
+    }
+    li ul {
+        display:none
+    }
+    li.title, .title > ul > li{
+        list-style:none;
+    }
+    li.title:before {
+        font-family: FontAwesome;
+        content: "\f13a";
+        margin-right: 7px;
+        opacity:0.5;
+    }
+    li.selected:before {
+        font-family: FontAwesome;
+        content: "\f139";
+        margin-right: 0.5vw;
+        opacity:0.5;
+        color: #A64452;
+    }
+    .title > ul > li:before {
+        font-family: FontAwesome;
+        content: "\f061";
+        margin-right: 0.5vw;
+        opacity: 0.5;
+        color: royalblue;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class='title'>HTML-CSS
+            <ul>
+                <li>Les balises</li>
+                <li>Les styles</li>
+            </ul>
+        </li>
+        <li class='title'>JS-jQuery
+            <ul>
+                <li>Les variables</li>
+                <li>Les conditions</li>
+                <li>Les boucles</li>
+                <li>Les fonctions</li>
+                <li>La selection d'éléments</li>
+                <li>La gestion d'events</li>
+                <li>La modification du DOM</li>
+            </ul>
+        </li>
+        <li class='title'>PHP-MySql
+            <ul>
+                <li>Programmation orientée Objet</li>
+                <li>Les requêtes SQL</li>
+                <li>Les Frameworks PHP</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

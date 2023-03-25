@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu DropDown</title>
+    <style media="screen">
+    main{
+        width: 60%;
+        margin: 0 auto;
+        background-color: antiquewhite;
+        min-height: 60vh;
+        padding: 5vh;
+        font-family: cursive;
+    }
+    ul {
+        background: #E3E8F8;
+        padding: 3px 7px;
+        width: 200px;
+        border: 1px solid #e7e8e9;
+        display:none;
+        position: absolute;
+        top: 7vh;
+        left: 3.8vw;
+        line-height: 2.5rem;
+    }
+    button#myButton{
+        color: #F8F8F8;
+        background-color: #A64452;
+        border-radius: 8%;
+        padding: 1vw;
+    }
+    ul li {
+        list-style: none;
+        text-align: left;
+    }
+    li a{
+        text-decoration: none;
+        color: #A64452;
+        font-weight: bold;
+    }
+        .dropdown-group {
+        position: relative;
+    }
+
+    </style>
+</head>
+<body>
+    <main>
+
+        <h1>Interactivité avec l'utilisateur</h1>
+        <h2>Objectif : Réaliser un menu dropDown simple en pur JavaScript</h2>
+
+        <div class="dropdown-group">
+            <button id="myButton">DropDown</button>
+            <ul id="dropdown-list">
+                <li><a href="#">Boutique</a></li>
+                <hr>
+                <li><a href="#">Panier</a></li>
+                <hr>
+                <li><a href="#">Blog<a></li>
+                </ul>
+            </div>
+        </main>
+    </body>
+    </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Valeurs finales</title>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<h1>Valeurs finales</h1>
+	<h3>Examinez le programme valeurs.js ci-dessous :</h3>
+	<p>var nb1 = Number(prompt("Entrez nb1 :"));</p>
+	<p>var nb2 = Number(prompt("Entrez nb2 :"));</p>
+	<p>var nb3 = Number(prompt("Entrez nb3 :"));</p><br />
+	<p>if (nb1 > nb2) {</p>
+	<p>nb1 = nb3 * 2;</p>
+	<p>} else {</p>
+	<p>nb1++;</p>
+	<p>if (nb2 > nb3) {</p>
+	<p>nb1 = nb1 + nb3 * 3;</p>
+	<p>} else {</p>
+	<p>nb1 = 0;</p>
+	<p>nb3 = nb3 * 2 + nb2;</p>
+	<p>}</p>
+	<p>}</p>
+
+	<h3>Avant de l'exécuter, tentez de prévoir les valeurs finales des variables nb1,nb2 et nb3 en fonction de leurs valeurs initiales et complétez le tableau ci-dessous.</h3>
+	<table>
+		<tr>
+			<th>valeurs initiales</th>
+			<th>valeur finale nb1</th>
+			<th>valeur finale nb2</th>
+			<th>valeur finale nb3</th>
+		</tr>
+		<tr>
+			<td>nb1=nb2=nb3=4</td>
+			<td>0</td>
+			<td>4</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>nb1=4, nb2=3, nb3=2</td>
+			<td>4</td>
+			<td>3</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>nb1=2, nb2=4, nb3=0</td>
+			<td>3</td>
+			<td>4</td>
+			<td>0</td>
+		</tr>
+	</table>
+
+	<h3>Résultat :</h3>
+	<script src="js/valeurs.js">
+
+	</script>
+</body>
+
+</html>

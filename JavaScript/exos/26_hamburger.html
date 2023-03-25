@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamburger animé JS</title>
+    <style media="screen">
+        #menu-panel {
+            width: 240px;
+            height: 100%;
+            position: absolute;
+            display: block;
+            /* background: #678; */
+            background: #F4806D;
+            top: 0;
+            transform: translateX(-239px);
+            transition: transform 0.2s ease-in;
+        }
+        #menu-panel.show {
+            transform: translateX(0);
+        }
+        .c-hamburger {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            width: 96px;
+            height: 96px;
+            font-size: 0;
+            text-indent: -9999px;
+            appearance: none;
+            box-shadow: none;
+            border-radius: none;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+            z-index: 1;
+            transform: translateX(0px);
+            transition: transform 0.2s ease-in;
+        }
+        .c-hamburger:focus {
+            outline: none;
+        }
+        .c-hamburger span {
+            display: block;
+            position: absolute;
+            top: 44px;
+            left: 18px;
+            right: 18px;
+            height: 8px;
+            /* background: white; */
+            background: #FFFFD3;
+        }
+        .c-hamburger span::before,
+        .c-hamburger span::after {
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-color: #FFFFD3;
+            content: "";
+        }
+        .c-hamburger span::before {
+            top: -20px;
+        }
+        .c-hamburger span::after {
+            bottom: -20px;
+        }
+        .c-hamburger--htx {
+        /* background-color: #4C67A1; */
+            background-color: #C02727;
+        }
+        .c-hamburger--htx span {
+            transition: background 0s 0.3s;
+        }
+        .c-hamburger--htx span::before,
+        .c-hamburger--htx span::after {
+            transition-duration: 0.3s, 0.3s;
+            transition-delay: 0.3s, 0s;
+        }
+        .c-hamburger--htx span::before {
+            transition-property: top, transform;
+        }
+        .c-hamburger--htx span::after {
+            transition-property: bottom, transform;
+        }
+
+        /* active state, i.e. menu open */
+        .c-hamburger--htx.is-active {
+        /* background-color: #567; */
+            background-color: #A64452;
+            transform: translateX(135px);
+        }
+        .c-hamburger--htx.is-active span {
+            background: none;
+        }
+        .c-hamburger--htx.is-active span::before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+        .c-hamburger--htx.is-active span::after {
+            bottom: 0;
+            transform: rotate(-45deg);
+        }
+        .c-hamburger--htx.is-active span::before,
+        .c-hamburger--htx.is-active span::after {
+            transition-delay: 0s, 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="c-hamburger c-hamburger--htx">
+          <span>toggle menu</span>
+    </button>
+    <div id="menu-panel"></div>
+    <script src='js/hamburger.js'></script>
+</body>
+</html>
